@@ -391,41 +391,6 @@
   </footer>
 
 
-  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({
-        pageLanguage: 'ar',
-        includedLanguages: 'en,ar',
-        autoDisplay: false
-      }, 'google_translate_element');
-    }
-  </script>
-
-  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-  <script>
-    document.querySelectorAll('.lang-option').forEach(item => {
-      item.addEventListener('click', function (e) {
-        e.preventDefault();
-        const lang = this.getAttribute('data-lang');
-        const iframe = document.querySelector('iframe.goog-te-menu-frame');
-
-        if (iframe) {
-          const innerDoc = iframe.contentDocument || iframe.contentWindow.document;
-          const langSpans = innerDoc.querySelectorAll('.goog-te-menu2-item span.text');
-
-          langSpans.forEach(span => {
-            if (span.innerText.toLowerCase().includes(lang)) {
-              span.click();
-            }
-          });
-
-          document.getElementById('lang-label').textContent = lang === 'en' ? 'English' : 'عربى';
-        }
-      });
-    });
-  </script>
-
   <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
