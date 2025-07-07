@@ -94,9 +94,11 @@ body {
 
 .feature li {
     background: #f8f9fa;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    
+    box-shadow: 0 4px 10px rgb(94, 6, 175, 0.1) !important;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
 }
-
 #services h6 {
     color: #18397c;
 }
@@ -125,11 +127,11 @@ body {
     height: 100%;
 }
 
-.card:hover {
+.card:hover , .feature li:hover{
     box-shadow: 0 4px 10px rgba(132, 22, 235, 0.3) !important;
-    transform: translateY(-10px);
-
+    transform: translateY(-10px) !important;
 }
+
 
 .contact-card {
     background-color: #f8f9fa;
