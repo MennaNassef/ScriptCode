@@ -1,12 +1,10 @@
 .logo {
     width: 120px;
 }
-
 .navbar-brand,
 .nav-link {
     color: #fff !important;
 }
-
 .navbar {
     background-color: blueviolet !important;
     color: aliceblue;
@@ -46,25 +44,29 @@
     transform: translateX(5px);
 }
 
-
-body {
-    padding-top: 30px;
-     margin: 0 !important;
-    overflow-x: hidden;
+body, html {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden;
 }
 
 .home {
-    background-color: blueviolet;
-    align-items: center;
-    color: aliceblue;
-    padding-top: 20px !important;
+  background-color: blueviolet;
+  color: aliceblue;
 }
+
+.h{
+    padding: 100px 50px 50px 50px;
+}
+
+
 .home h1 {
     color: aliceblue;
     font-size: 40px;
     line-height: 56px;
 
 }
+
 
 .about {
     align-items: center;
