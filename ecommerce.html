@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>enterprise</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+
+    main {
+      flex: 1;
+      padding-top: 40px;
+    }
+
+    .card {
+      height: 100%;
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-img-top {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 20px;
+      padding: 5px;
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container-fluid pt-1 px-5">
+      <div class="ps-4">
+        <img src="WhatsApp Image 2025-07-03 at 4.23.48 PM-Photoroom.png" class="logo">
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto px-5">
+          <li class="nav-item mx-2"><a class="nav-link" href="index.html#home">الرئيسية</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="index.html#about">من نحن</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">مشاريعنا</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="web.html">تطوير تطبيقات الهاتف والويب</a></li>
+              <li><a class="dropdown-item" href="ui.html">تصميم واجهات المستخدم وتجربة المستخدم</a></li>
+              <li><a class="dropdown-item" href="enterprise.html">تطوير البرمجيات المؤسسية</a></li>
+              <li><a class="dropdown-item" href="it.html">خدمات تكنولوجيا المعلومات والتحول الرقمي</a></li>
+              <li><a class="dropdown-item" href="ecommerce.html">تطوير تطبيقات التجارة الإلكترونية</a></li>
+              <li><a class="dropdown-item" href="cms.html">تطوير أنظمة إدارة المحتوى</a></li>
+              <li><a class="dropdown-item" href="games.html">تطوير تطبيقات الألعاب</a></li>
+            </ul>
+          </li>
+          <li class="nav-item mx-2"><a class="nav-link" href="index.html#services">خدماتنا</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="index.html#contact">تواصل معنا</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <main>
+    <section class="container pt-5">
+      <h2 class="mb-5 text-center pt-5"> مشاريع تطوير تطبيقات التجارة الإلكترونية</h2>
+      <div id="projects" class="row justify-content-center"></div>
+    </section>
+  </main>
+
+  <footer class="footer bg-purple text-white py-4 mt-5">
+    <div class="container">
+      <div class="row mb-4 align-items-center flex-wrap justify-content-between">
+        <div class="col-lg-6 d-flex align-items-center mb-4 mb-lg-0">
+          <img src="WhatsApp Image 2025-07-03 at 4.23.48 PM-Photoroom.png" alt="" class="me-3" height="40">
+          <p class="mb-0">
+            نصمم ونطوّر حلول برمجية ذكية تعتمد على أحدث التقنيات لتقود أعمالك نحو مستقبل رقمي آمن ومتطور.
+          </p>
+        </div>
+        <div class="col-lg-6 text-lg-end text-center">
+          <a href="#"
+            class="btn btn-outline-light btn-sm rounded-circle d-inline-flex justify-content-center align-items-center mx-1"><i
+              class="fab fa-twitter"></i></a>
+          <a href="#"
+            class="btn btn-outline-light btn-sm rounded-circle d-inline-flex justify-content-center align-items-center mx-1"><i
+              class="fab fa-facebook"></i></a>
+          <a href="#"
+            class="btn btn-outline-light btn-sm rounded-circle d-inline-flex justify-content-center align-items-center mx-1"><i
+              class="fab fa-instagram"></i></a>
+          <a href="#"
+            class="btn btn-outline-light btn-sm rounded-circle d-inline-flex justify-content-center align-items-center mx-1"><i
+              class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <hr class="horizontal dark m-4">
+
+      <div class="row text-center mb-0 pb-0">
+        <div class="col-12">
+          <p class="text-sm mb-0">
+            © 2025 | شركة سكريبت كود | جميع الحقوق محفوظة.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const projects = JSON.parse(localStorage.getItem('ecommerceProjects') || '[]');
+    const container = document.getElementById('projects');
+
+    projects.forEach(project => {
+      const card = document.createElement('div');
+      card.className = 'col-12 col-sm-6 col-md-4 col-lg-3 d-flex mb-4';
+      card.innerHTML = `
+        <div class="card h-100 w-100">
+          <img src="${project.image}" class="card-img-top" alt="صورة المشروع">
+          <div class="card-body">
+            <h5 class="card-title">${project.name}</h5>
+            <p class="card-text">${project.desc}</p>
+            <a href="${project.link}" target="_blank" class="btn">عرض المشروع</a>
+          </div>
+        </div>
+      `;
+      container.appendChild(card);
+    });
+
+  </script>
+  <script src="main.js"></script>
+</body>
+
+</html>

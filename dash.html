@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dashbord</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" />
+  <style>
+    body {
+      min-height: 100vh;
+      background-color: #eee;
+      padding: 0;
+    }
+
+    .sidebar {
+      min-height: 100vh;
+      background-color: #6f42c1;
+      color: white;
+    }
+
+    .sidebar img {
+      margin: 1.5rem;
+      width: 150px;
+    }
+
+    .sidebar a {
+      color: white;
+      display: block;
+      padding: 0.75rem 1rem;
+      text-decoration: none;
+    }
+
+    .sidebar a:hover {
+      background-color: #5a36a3;
+    }
+
+    .form-card {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .logout {
+      color: rgb(108, 9, 200) !important;
+      background-color: rgb(255, 255, 255) !important;
+    }
+    .section {
+      display: none;
+    }
+
+    .section:target {
+      display: block;
+      background: #eee;
+      padding: 20px;
+      margin-top: 20px;
+    }
+  </style>
+  <link rel="stylesheet" href="dash.css">
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-md-3 sidebar">
+        <div class="text-center">
+          <img src="WhatsApp Image 2025-07-03 at 4.23.48 PM-Photoroom.png" class="text-center"></img>
+        </div>
+        <a href="#web">تطوير تطبيقات الهاتف والويب </a>
+        <a href="#ui">تصميم واجهات وتجربة المستخدم </a>
+        <a href="#enterprise">تطوير البرمجيات المؤسسية</a>
+        <a href="#it">خدمات تكنولوجيا المعلومات والتحول الرقمي</a>
+        <a href="#ecommerce">تطوير تطبيقات التجارة الإلكترونية</a>
+        <a href="#cms">تطوير أنظمة إدارة المحتوى</a>
+        <a href="#games">تطوير تطبيقات الألعاب</a>
+
+        <div class="text-center">
+  <a href="login.html" class="btn logout mt-5 d-inline-block px-4 py-2" style="text-decoration: none;">
+    تسجيل الخروج
+  </a>
+</div>
+
+
+      </div>
+      <div id="welcome-image-container" class="col-md-9 p-5 text-center">
+  <img src="5155714_2672292.jpg" alt="" style="max-width: 80%; border-radius: 15px;">
+</div>
+
+
+      <div class="col-md-9 p-3 section" id="web">
+
+        <div class="form-card">
+          <h4 class="mb-4"> لإضافة مشروع جديد لتطوير تطبيقات الهاتف والويب</h4>
+
+          <form id="form-web">
+            <div class="mb-3">
+              <label for="projectName" class="form-label">اسم المشروع</label>
+              <input type="text" class="form-control" id="projectName" required>
+            </div>
+            <div class="mb-3">
+              <label for="projectDesc" class="form-label">وصف المشروع</label>
+              <textarea class="form-control" id="projectDesc" rows="4" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="projectLink" class="form-label">رابط المشروع</label>
+              <input type="url" class="form-control" id="projectLink" required>
+            </div>
+            <div class="mb-3">
+              <label for="projectImage" class="form-label">صورة المشروع</label>
+              <input type="file" class="form-control" id="projectImage" accept="image/*" required>
+            </div>
+            <div class="mt-4 bg-purpel">
+              <button type="submit" class="btn px-5 py-2 text-white">إضافة</button>
+            </div>
+          </form>
+          <hr class="my-5">
+
+          <div class="form-card mt-4">
+            <h5 class="mb-3">حذف مشروع من تطوير تطبيقات الهاتف والويب</h5>
+            <form id="delete-web">
+              <div class="mb-3">
+                <label for="deleteName-web" class="form-label">اسم المشروع</label>
+                <input type="text" class="form-control" id="deleteName-web" required>
+              </div>
+              <button type="submit" class="btn text-white">حذف</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9 p-3 section" id="ui">
+
+        <div class="form-card">
+          <h4 class="mb-4">إضافة مشروع جديد لتصميم واجهات المستخدم وتجربة المستخدم</h4>
+          <form id="form-ui">
+            <div class="mb-3">
+              <label for="projectName" class="form-label">اسم المشروع</label>
+              <input type="text" class="form-control" id="projectName" required>
+            </div>
+            <div class="mb-3">
+              <label for="projectDesc" class="form-label">وصف المشروع</label>
+              <textarea class="form-control" id="projectDesc" rows="4" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="projectLink" class="form-label">رابط المشروع</label>
+              <input type="url" class="form-control" id="projectLink" required>
+            </div>
+            <div class="mb-3">
+              <label for="projectImage" class="form-label">صورة المشروع</label>
+              <input type="file" class="form-control" id="projectImage" accept="image/*" required>
+            </div>
+            <div class="mt-4 bg-purpel">
+              <button type="submit" class="btn px-5 py-2 text-white">إضافة</button>
+            </div>
+          </form>
+          <hr class="my-5">
+
+          <div class="form-card mt-4">
+            <h5 class="mb-3">حذف مشروع من تصميم واجهات المستخدم وتجربة المستخدم</h5>
+            <form id="delete-ui">
+              <div class="mb-3">
+                <label for="deleteName-ui" class="form-label">اسم المشروع </label>
+                <input type="text" class="form-control" id="deleteName-ui" required>
+              </div>
+              <button type="submit" class="btn text-white">حذف</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9 p-3 section" id="enterprise">
+
+        <div class="form-card">
+          <h4 class="mb-4">إضافة مشروع جديد لتطوير البرمجيات المؤسسية</h4>
+          <form id="form-enterprise">
+            <div class="mb-3">
+              <label for="projectName" class="form-label">اسم المشروع</label>
+              <input type="text" class="form-control" id="projectName" required>
+            </div>
+            <div class="mb-3">
+              <label for="projectDesc" class="form-label">وصف المشروع</label>
+              <textarea class="form-control" id="projectDesc" rows="4" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="projectLink" class="form-label">رابط المشروع</label>
+              <input type="url" class="form-control" id="projectLink" required>
+            </div>
+            <div class="mb-3">
+              <label for="projectImage" class="form-label">صورة المشروع</label>
+              <input type="file" class="form-control" id="projectImage" accept="image/*" required>
+            </div>
+            <div class="mt-4 bg-purpel">
+              <button type="submit" class="btn px-5 py-2 text-white">إضافة</button>
+            </div>
+          </form>
+          <hr class="my-5">
+
+          <div class="form-card mt-4">
+            <h5 class="mb-3">حذف مشروع من تطوير البرمجيات المؤسسية</h5>
+            <form id="delete-enterprise">
+              <div class="mb-3">
+                <label for="deleteName-enterprise" class="form-label">اسم المشروع</label>
+                <input type="text" class="form-control" id="deleteName-enterprise" required>
+              </div>
+              <button type="submit" class="btn text-white">حذف</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9 p-3 section" id="it">
+
+        <div class="form-card">
+          <h4 class="mb-4">إضافة مشروع جديد لخدمات تكنولوجيا المعلومات والتحول الرقمي</h4>
+          <form id="form-it">
+            <div class="mb-3">
+              <label for="projectName" class="form-label">اسم المشروع</label>
+              <input type="text" class="form-control" id="projectName" required>
+            </div>
+            <div class="mb-3">
+              <label for="projectDesc" class="form-label">وصف المشروع</label>
+              <textarea class="form-control" id="projectDesc" rows="4" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="projectLink" class="form-label">رابط المشروع</label>
+              <input type="url" class="form-control" id="projectLink" required>
+            </div>
+            <div class="mb-3">
+              <label for="projectImage" class="form-label">صورة المشروع</label>
+              <input type="file" class="form-control" id="projectImage" accept="image/*" required>
+            </div>
+            <div class="mt-4 bg-purpel">
+              <button type="submit" class="btn px-5 py-2 text-white">إضافة</button>
+            </div>
+          </form>
+          <hr class="my-5">
+
+          <div class="form-card mt-4">
+            <h5 class="mb-3">حذف مشروع من خدمات تكنولوجيا المعلومات والتحول الرقمي</h5>
+            <form id="delete-it">
+              <div class="mb-3">
+                <label for="deleteName-it" class="form-label">اسم المشروع </label>
+                <input type="text" class="form-control" id="deleteName-it" required>
+              </div>
+              <button type="submit" class="btn text-white">حذف</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9 p-3 section" id="ecommerce"> 
+        <div class="form-card">
+          <h4 class="mb-4">إضافة مشروع جديد لتطوير تطبيقات التجارة الإلكترونية</h4>
+          <form id="form-ecommerce">
+            <div class="mb-3">
+              <label for="projectName" class="form-label">اسم المشروع</label>
+              <input type="text" class="form-control" id="projectName" required>
+            </div>
+            <div class="mb-3">
+              <label for="projectDesc" class="form-label">وصف المشروع</label>
+              <textarea class="form-control" id="projectDesc" rows="4" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="projectLink" class="form-label">رابط المشروع</label>
+              <input type="url" class="form-control" id="projectLink" required>
+            </div>
+            <div class="mb-3">
+              <label for="projectImage" class="form-label">صورة المشروع</label>
+              <input type="file" class="form-control" id="projectImage" required>
+            </div>
+            <div class="mt-4 bg-purpel">
+              <button type="submit" class="btn px-5 py-2 text-white">إضافة</button>
+            </div>
+          </form>
+          <hr class="my-5">
+
+          <div class="form-card mt-4">
+            <h5 class="mb-3">حذف مشروع من تطوير تطبيقات التجارة الإلكترونية</h5>
+            <form id="delete-ecommerce">
+              <div class="mb-3">
+                <label for="deleteName-ecommerce" class="form-label">اسم المشروع</label>
+                <input type="text" class="form-control" id="deleteName-ecommerce" required>
+              </div>
+              <button type="submit" class="btn text-white">حذف</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9 p-3 section" id="cms">
+
+        <div class="form-card">
+          <h4 class="mb-4">إضافة مشروع جديد لتطوير أنظمة إدارة المحتوى</h4>
+          <form id="form-cms">
+            <div class="mb-3">
+              <label for="projectName" class="form-label">اسم المشروع</label>
+              <input type="text" class="form-control" id="projectName" required>
+            </div>
+            <div class="mb-3">
+              <label for="projectDesc" class="form-label">وصف المشروع</label>
+              <textarea class="form-control" id="projectDesc" rows="4" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="projectLink" class="form-label">رابط المشروع</label>
+              <input type="url" class="form-control" id="projectLink" required>
+            </div>
+            <div class="mb-3">
+              <label for="projectImage" class="form-label">صورة المشروع</label>
+              <input type="file" class="form-control" id="projectImage" required>
+            </div>
+            <div class="mt-4 bg-purpel">
+              <button type="submit" class="btn px-5 py-2 text-white">إضافة</button>
+            </div>
+          </form>
+          <hr class="my-5">
+
+          <div class="form-card mt-4">
+            <h5 class="mb-3">حذف مشروع من تطوير أنظمة إدارة المحتوى</h5>
+            <form id="delete-cms">
+              <div class="mb-3">
+                <label for="deleteName-cms" class="form-label">اسم المشروع</label>
+                <input type="text" class="form-control" id="deleteName-cms" required>
+              </div>
+              <button type="submit" class="btn text-white">حذف</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9 p-3 section" id="games">
+
+        <div class="form-card">
+          <h4 class="mb-4">إضافة مشروع جديد لتطوير تطبيقات الألعاب</h4>
+          <form id="form-games">
+            <div class="mb-3">
+              <label for="projectName" class="form-label">اسم المشروع</label>
+              <input type="text" class="form-control" id="projectName" required>
+            </div>
+            <div class="mb-3">
+              <label for="projectDesc" class="form-label">وصف المشروع</label>
+              <textarea class="form-control" id="projectDesc" rows="4" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="projectLink" class="form-label">رابط المشروع</label>
+              <input type="url" class="form-control" id="projectLink" required>
+            </div>
+            <div class="mb-3">
+              <label for="projectImage" class="form-label">صورة المشروع</label>
+              <input type="file" class="form-control" id="projectImage" required>
+            </div>
+            <div class="mt-4 bg-purpel">
+              <button type="submit" class="btn px-5 py-2 text-white">إضافة</button>
+            </div>
+          </form>
+          <hr class="my-5">
+
+          <div class="form-card mt-4">
+            <h5 class="mb-3">حذف مشروع من تطوير تطبيقات الألعاب</h5>
+            <form id="delete-games">
+              <div class="mb-3">
+                <label for="deleteName-games" class="form-label">اسم المشروع </label>
+                <input type="text" class="form-control" id="deleteName-games" required>
+              </div>
+              <button type="submit" class="btn text-white">حذف</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+<script>
+  const sections = ['web', 'ui', 'enterprise', 'it', 'ecommerce', 'cms', 'games'];
+
+  sections.forEach(section => {
+    const form = document.getElementById(`form-${section}`);
+    if (form) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const name = form.querySelector('#projectName').value;
+        const desc = form.querySelector('#projectDesc').value;
+        const link = form.querySelector('#projectLink').value;
+        const imageInput = form.querySelector('#projectImage');
+        const file = imageInput?.files[0];
+
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = function () {
+            const image = reader.result;
+            const project = { name, desc, link, image };
+
+            const existing = JSON.parse(localStorage.getItem(`${section}Projects`) || '[]');
+            existing.push(project);
+            localStorage.setItem(`${section}Projects`, JSON.stringify(existing));
+
+            form.reset();
+            alert('تم إضافة المشروع بنجاح!');
+          };
+          reader.readAsDataURL(file); 
+        } else {
+          alert('يجب رفع صورة للمشروع.');
+        }
+      });
+    }
+  });
+
+  sections.forEach(section => {
+    const deleteForm = document.getElementById(`delete-${section}`);
+    if (deleteForm) {
+      deleteForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const nameToDelete = deleteForm.querySelector(`#deleteName-${section}`).value.trim();
+        const key = `${section}Projects`;
+
+        const existing = JSON.parse(localStorage.getItem(key) || '[]');
+        const updated = existing.filter(p => p.name !== nameToDelete);
+
+        if (updated.length === existing.length) {
+          alert('لم يتم العثور على مشروع بهذا الاسم.');
+        } else {
+          localStorage.setItem(key, JSON.stringify(updated));
+          alert('تم حذف المشروع بنجاح.');
+          deleteForm.reset();
+        }
+      });
+    }
+  });
+  
+
+  window.addEventListener("hashchange", () => {
+    document.getElementById("welcome-image-container").style.display = "none";
+  });
+  if (location.hash) {
+    document.getElementById("welcome-image-container").style.display = "none";
+  }
+</script>
+
+
+</body>
+
+</html>
